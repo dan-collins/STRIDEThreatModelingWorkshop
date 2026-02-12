@@ -1,0 +1,7 @@
+ThreatID,STRIDECategory,ComponentOrFlow,ThreatDescription,Impact,Likelihood,Priority,ProposedMitigation,Owner,Status
+S1,Spoofing,Login + session,Attacker pretends to be another user to access their account,,,,,,,
+T1,Tampering,Create/Update submission API,Client modifies request to change data they shouldn't,,,,,,,
+R1,Repudiation,Admin moderation actions,User/admin denies they performed action due to missing audit logs,,,,,,,
+I1,Information Disclosure,View submission endpoint,Unauthorized access to other users' private submissions (IDOR),,,,,,,
+D1,Denial of Service,Search/list endpoint,Excessive requests degrade availability,,,,,,,
+E1,Elevation of Privilege,Admin endpoints,User gains admin capabilities due to missing authorization checks,,,,,,,
