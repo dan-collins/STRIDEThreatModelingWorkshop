@@ -1,15 +1,15 @@
 flowchart LR
-  user[User (Browser)] -->|HTTPS| web[Web Frontend]
-  web -->|API calls (HTTPS)| api[Backend API]
+  user[User Browser] -->|HTTPS| web[Web Frontend]
+  web -->|API calls HTTPS| api[Backend API]
   api -->|SQL| db[(Database)]
   api -->|OAuth redirect| idp[OAuth Provider]
 
-  subgraph TB1[Trust Boundary: Public Internet]
+  subgraph TB1 [Trust Boundary: Public Internet]
     user
     idp
   end
 
-  subgraph TB2[Trust Boundary: App Infrastructure]
+  subgraph TB2 [Trust Boundary: App Infrastructure]
     web
     api
     db
