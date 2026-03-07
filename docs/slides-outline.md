@@ -1,4 +1,4 @@
-# Slides Outline (10–12 mins talk + 45–75 mins hands-on)
+# Slides Outline
 
 1) **Why threat model at a hackathon?**
    - You’re shipping fast
